@@ -10,6 +10,9 @@ let sumEl = document.getElementById("sum-el");
 let cardsEl = document.getElementById("cards-el");
 let cardEl = document.getElementById("card-el");
 
+const animation = () => {
+    messageEl.classList.add('horizTranslate');
+}; 
 //function to restart the game
 function restart(){
     location.reload(); 
@@ -26,8 +29,8 @@ function startGame() {
     if (sum <= 20) {
         message = "Do you want to draw a new card?"
     } else if (sum === 21) {
-        message = "You've got Blackjack!"
-        alert("You've got Blackjack!")
+        message = "You've got Blackjack!";
+        animation();
         hasBlackJack = true;
     } else if(sum >= 22){
         message = "You're out of the game!"

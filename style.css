@@ -1,5 +1,5 @@
 body {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', Arial, sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 30px;
     background-image: url('./images/pexels-javon-swaby-3279691.jpg');
     background-size: 100%;
@@ -21,6 +21,7 @@ body {
     color: goldenrod;
     font-size: 120px;
 }
+
 #main-div{
    /* -webkit-text-stroke: 0.5px rgb(0, 0, 0); */
     display: flex;
@@ -41,6 +42,9 @@ p {
 #message-el {
     font-size: 45px;
     font-style: italic;
+}
+#message-el.horizTranslate {
+    -webkit-text-stroke: 2px red;
 }
 
 /* 3. Make sure that the two buttons have some space between
@@ -98,6 +102,9 @@ button:hover {
         font-size: 25px;
         width: 155%;
     }
+    #message-el.horizTranslate {
+        -webkit-text-stroke: 0.5px red;
+    }
     
     /* 3. Make sure that the two buttons have some space between
     each other when they are rendered out vertically */
@@ -141,7 +148,9 @@ button:hover {
         font-size: 35px;
         width: 110%;
     }
-    
+    #message-el.horizTranslate {
+        -webkit-text-stroke: 1px red;
+    }
     /* 3. Make sure that the two buttons have some space between
     each other when they are rendered out vertically */
     #buttons{
