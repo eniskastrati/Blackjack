@@ -1,4 +1,4 @@
-document.body.style.zoom="260%"
+document.body.style.zoom="110%"
 let firstCard = randomIntFromInterval(2,11)
 let secondCard = randomIntFromInterval(2,9)
 let sum = firstCard + secondCard;
