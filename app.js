@@ -1,4 +1,4 @@
-//Thansks for having a look my code :)
+//Thansks for having a look att  my code :)
 //setting default zoom for the user to 110%
 document.body.style.zoom = "110%";
 
@@ -41,16 +41,22 @@ function startGame() {
   //displaying the sum of two card on the screen
   sumEl.textContent = "Sum: " + sum;
 
-  if (sum <= 20) {
+  if (sum <= 20) 
+  {
     message = "Do you want to draw a new card?";
-  } else if (sum === 21) {
+  } 
+  else if (sum === 21) 
+  {
     message = "You've got Blackjack!";
     animation();
     hasBlackJack = true;
-  } else if (sum >= 22) {
+  } 
+  else if (sum >= 22) 
+  {
     message = "You're out of the game!";
     isAlive = false;
-    if (isAlive == false) {
+    if (isAlive == false) 
+    {
       setTimeout(() => restart(), 4000);
     }
   }
@@ -70,4 +76,4 @@ function newCard() {
 }
 
 //This is a very small JavaScript project to test my beginner JavaScript skills
-//Thansks for having a look my code :)
+//Thansks for having a look at my code :)
