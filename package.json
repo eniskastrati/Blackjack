@@ -1,0 +1,25 @@
+{
+  "name": "blackjack",
+  "version": "1.0.0",
+  "description": "Basic and easy Blackjack game",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eniskastrati/Blackjack.git"
+  },
+  "keywords": [
+    "blackjack",
+    "HTML",
+    "CSS",
+    "JavaScript"
+  ],
+  "author": "eniskastrati",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eniskastrati/Blackjack/issues"
+  },
+  "homepage": "https://github.com/eniskastrati/Blackjack#readme"
+}

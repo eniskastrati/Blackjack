@@ -21,7 +21,7 @@ function randomIntFromInterval(min, max) { // min and max included
 }
   
 function startGame() {
-	cardsEl.textContent ="Cards: " +firstCard +" "+ secondCard;
+	cardsEl.textContent ="Cards: |" +firstCard +"| |"+ secondCard+"|";
 	sumEl.textContent = "Sum: " + sum;
     if (sum <= 20) {
         message = "Do you want to draw a new card?"
@@ -33,7 +33,7 @@ function startGame() {
         message = "You're out of the game!"
 		isAlive = false;
         if(isAlive == false){
-            setTimeout(()=>restart(),4000);
+            setTimeout(()=> restart(),4000);
         }
     }
 	messageEl.textContent = message;
@@ -46,7 +46,7 @@ function newCard() {
     // 1. Create a card variable, and hard code its value to a number (2-11)
 	let nextCard = randomIntFromInterval(2,11)
     // 2. Add the new card to the sum variable
-    cardEl.textContent = "NewCard: "+ nextCard;
+    cardEl.textContent = "NewCard: |"+ nextCard+"|";
 	sum = sum + nextCard;
 	// 3. Call startGame()
 	startGame();
