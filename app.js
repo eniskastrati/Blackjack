@@ -1,8 +1,7 @@
-//Thansks for having a look att  my code :)
 
 //declearing variables (game elements)
-let firstCard = randomIntFromInterval(2, 11);
-let secondCard = randomIntFromInterval(2, 9);
+let firstCard = randomIntFromInterval(2, 11);//first random card
+let secondCard = randomIntFromInterval(2, 9);//second randomo card
 let sum = firstCard + secondCard;
 let hasBlackJack = false;
 let isAlive = true;
@@ -42,12 +41,14 @@ function startGame() {
   if (sum <= 20) 
   {
     message = "Do you want to draw a new card?";
+    isAlive = true;
   } 
   else if (sum === 21) 
   {
     message = "You've got Blackjack!";
     animation();
     hasBlackJack = true;
+    isAlive = true;
   } 
   else if (sum >= 22) 
   {
@@ -55,10 +56,10 @@ function startGame() {
     isAlive = false;
     if (isAlive == false) 
     {
-      setTimeout(() => restart(), 4000);
+      setTimeout(() => restart(), 3000);
     }
   }
-  //the message is gonna be printed the way if returns it
+  //the message is gonna be printed the way if statement returns it
   messageEl.textContent = message;
 }
 
@@ -68,6 +69,7 @@ function newCard() {
   let nextCard = randomIntFromInterval(2, 11);
   // 2. Adding the new card to the sum variable
   cardEl.textContent = "NewCard: |" + nextCard + "|";
+  console.log("The next card is generated with value : "+ nextCard);
   sum = sum + nextCard;
   // 3. Calling startGame() function so that the games countinues
   startGame();
@@ -75,3 +77,6 @@ function newCard() {
 
 //This is a very small JavaScript project to test my beginner JavaScript skills
 //Thansks for having a look at my code :)
+
+//www.eniskastrati.de
+//www.github.com/eniskastrati
