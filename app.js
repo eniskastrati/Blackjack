@@ -21,7 +21,7 @@ const animation = () => {
 
 //function to restart the game
 function restart() {
-    //this function restarts the page 
+  //this function restarts the page 
   location.reload();
 }
 
@@ -33,7 +33,7 @@ function randomIntFromInterval(min, max) {
 }
 
 function startGame() {
-    //displaying the cards on the screen
+  //displaying the cards on the screen
   cardsEl.textContent = "Cards: |" + firstCard + "| |" + secondCard + "|";
   //displaying the sum of two card on the screen
   sumEl.textContent = "Sum: " + sum;
