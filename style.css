@@ -1,7 +1,6 @@
 body {
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 30px;
-  background-image: url("./images/pexels-javon-swaby-3279691.jpg");
   background-size: 100%;
   background-repeat: no-repeat;
   font-weight: bolder;
@@ -13,10 +12,12 @@ body {
   transform: translate(-50%, -50%);
   max-width: 100%;
   max-height: 100vh;
-  padding: 5px;
-  margin: 20px 20px;
+  margin: 0;
+  overflow: hidden;
 }
 #main-div h1 {
+  margin-top: 10%;
+  margin-bottom: 10%;
   color: goldenrod;
   font-size: 120px;
 }
@@ -33,14 +34,17 @@ body {
 }
 p {
   margin-top: 0;
+  margin-bottom: 5%;
 }
 #message-el {
-  font-size: 45px;
+  font-size: 55px;
   font-style: italic;
+  white-space: nowrap;
 }
 #message-el.horizTranslate {
   -webkit-text-stroke: 2px red;
 }
+
 button {
   font-size: 15px;
   color: #016f32;
@@ -59,6 +63,7 @@ button:hover {
   color: white;
 }
 #author {
+  font-size: 30px;
   filter: blur(1px);
   margin-top: 20%;
 }
@@ -71,39 +76,39 @@ button:hover {
     max-height: 100vh;
   }
   #main-div h1 {
-    font-size: 60px;
+    font-size: 80px;
   }
   #message-el {
-    font-size: 25px;
-    width: 155%;
+    font-size: 30px;
   }
-  button {
-    height: 35px;
+  #buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    margin: auto;
   }
 }
 /*-----Responsive for Tablet----------*/
 @media screen and (min-width: 600px) and (max-width: 1466px) {
   body {
-    font-size: 22px;
-    background-size: 270%;
-    max-width: 80%;
-    max-height: 100vh;
+    font-size: 32px;
+    background-size: 220%;
+    max-width: 100%;
+    max-height: 100%;
     padding: 5px;
     margin: 20px 20px;
   }
-  #main-div h1 {
-    align-items: center;
-    font-size: 75px;
-  }
-  #main-div {
-    display: flex;
-    justify-content: space-between;
-  }
   #message-el {
-    width: 110%;
+    font-size: 45px;
   }
-  #buttons {
+  #buttons{
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    margin: auto;
   }
 }

@@ -1,6 +1,4 @@
 //Thansks for having a look att  my code :)
-//setting default zoom for the user to 110%
-document.body.style.zoom = "110%";
 
 //declearing variables (game elements)
 let firstCard = randomIntFromInterval(2, 11);
