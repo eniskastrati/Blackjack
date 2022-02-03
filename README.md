@@ -1,6 +1,10 @@
 # Blackjack
 
-Basis Blackjack game with HTML, CSS  and JavaScript
+A simple Blackjack game using HTML, CSS and JavaScript
 
-This small game can also be played online: eniskastrati.github.io/blackjack/
+Give it a try online --> <a href="https://eniskastrati.github.io/blackjack/">BlackJack</a>
 
+![alt text](https://github.com/eniskastrati/blackjack/blob/AppDevelopment/images/blackjack-first.png?raw=true)
+
+
+![alt text](https://github.com/eniskastrati/blackjack/blob/AppDevelopment/images/Blackjack.png?raw=true)
