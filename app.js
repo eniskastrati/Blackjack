@@ -51,7 +51,6 @@ function startGame() {
     animation();
     hasBlackJack = true;
     isAlive = true;
-    break;
   } 
   else if (sum >= 22) 
   {
