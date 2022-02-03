@@ -56,7 +56,7 @@ function startGame() {
   {
     message = "You're out of the game!";
     isAlive = false;
-    if (isAlive == false) 
+    if (isAlive == false && hasBlackJack == false) 
     {
       setTimeout(() => restart(), 4500);
     }
