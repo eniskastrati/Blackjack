@@ -12,6 +12,8 @@ let messageEl = document.getElementById("message-el");
 let sumEl = document.getElementById("sum-el");
 let cardsEl = document.getElementById("cards-el");
 let cardEl = document.getElementById("card-el");
+let startBtn = document.getElementById("startBtn");
+let newCardBtn = document.getElementById("newCardBtn");
 
 //an arrow function which adds animation after we win the blackjack
 const animation = () => {
@@ -49,6 +51,7 @@ function startGame() {
     animation();
     hasBlackJack = true;
     isAlive = true;
+    break;
   } 
   else if (sum >= 22) 
   {
@@ -68,7 +71,7 @@ function newCard() {
   // 1. Create a card variable, and givint it a random value from 1 to 11
   let nextCard = randomIntFromInterval(2, 11);
   // 2. Adding the new card to the sum variable
-  cardEl.textContent = "NewCard: |" + nextCard + "|";
+  cardEl.textContent = "NewCard: |" + nextCard + "| ";
   console.log("The next card is generated with value : "+ nextCard);
   sum = sum + nextCard;
   // 3. Calling startGame() function so that the games countinues
