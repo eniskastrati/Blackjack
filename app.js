@@ -56,7 +56,7 @@ function startGame() {
     isAlive = false;
     if (isAlive == false) 
     {
-      setTimeout(() => restart(), 2000);
+      setTimeout(() => restart(), 4500);
     }
   }
   //the message is gonna be printed the way if statement returns it
