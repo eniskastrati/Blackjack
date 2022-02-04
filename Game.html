@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Basic Web Game">
+    <meta name="keywords" content="HTML,CSS,JavaScript,Blackjack">
+    <meta name="author" content="Enis Kastrati">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>--  Blackjack --</title>
+  </head>
+  <!-- Background image is in index.html for a fasster loading as web call first of all HTML file and then styelsheet-->
+  <body style="background-image: url(./images/pexels-javon-swaby-3279691.jpg );">
+    <div id="main-div">
+      <h1 id="Blackjack">Blackjack</h1>
+      <p id="message-el">Want to play a round?</p>
+      <p id="cards-el">Cards:</p>
+      <p id="card-el"></p>
+      <p id="sum-el">Sum:</p>
+      <div id="buttons">
+        <button id="startBtn" onclick="startGame()">START GAME</button>
+        <button id="newCardBtn" onclick="newCard()">NEW CARD</button>
+        <button id="res-button" onclick="restart()">RESTART THE GAME</button>
+      </div>
+      <p id="author">@github.com/eniskastrati</p>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
