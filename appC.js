@@ -71,6 +71,14 @@ function startGame() {
     hasBlackJack = true;
     isAlive = true;
   }
+  else if(sumC >= 22){
+    message = "You won the game!";
+    isAlive = false;
+    if (isAlive == false && hasBlackJack == false) 
+    {
+      setTimeout(() => restart(), 4500);
+    }
+  }
   else if (sum >= 22) 
   {
     message = "You're out of the game!";
@@ -92,15 +100,16 @@ function newCard() {
   cardEl.textContent = "NewCard: |" + nextCard + "| ";
   console.log("The next card is generated with value : "+ nextCard);
   sum = sum + nextCard;
-
-
+  // 3. Calling startGame() function so that the games countinues
+  startGame();
+}
+function newCardC() {
   // 1. Create a card variable for nextCard for Computer
   let nextCardC = randomIntFromInterval(2, 11);
   // 2. Adding the new card to the sum variable
-  cardElc.textContent = "NewCard: |" + nextCard + "| ";
-  console.log("The next card is generated with value : "+ nextCard);
-  sumC = sumC + nextCard;
-
+  cardElc.textContent = "NewCard: |" + nextCardC + "| ";
+  console.log("The next card is generated with value : "+ nextCardC);
+  sumC = sumC + nextCardC;
   // 3. Calling startGame() function so that the games countinues
   startGame();
 }
