@@ -4,7 +4,8 @@ let firstCard = randomIntFromInterval(2, 11);//first random card
 let secondCard = randomIntFromInterval(2, 9);//second randomo card
 let firstCardC = randomIntFromInterval(2, 11);//first random card for Computer
 let secondCardC = randomIntFromInterval(2, 9);//second randomo card for Computer
-let sum = firstCard + secondCard;
+let sum = firstCard + secondCard;//sum of cards USERS
+let sumC = firstCardC + secondCardC;//sum of cards COMPUTER
 let hasBlackJack = false;
 let isAlive = true;
 let message = "";
@@ -50,9 +51,9 @@ function startGame() {
   //displaying the cards on the screen for the Computer
   cardsElc.textContent = "Cards: |" + firstCardC + "| |" + secondCardC + "|";
   //displaying the sum of two card on the screen for the Computer
-  sumElc.textContent = "Sum: " + (firstCardC + secondCardC);
+  sumElc.textContent = "Sum: " + sumC;
   
-  if (sum <= 20) 
+  if (sum <= 20 && sumC <= 20) 
   {
     message = "Want to draw a new card?";
     isAlive = true;
@@ -63,7 +64,13 @@ function startGame() {
     animation();
     hasBlackJack = true;
     isAlive = true;
-  } 
+  }
+  else if(sumC === 21) {
+    message = "Computer got Blackjack!";
+    animation();
+    hasBlackJack = true;
+    isAlive = true;
+  }
   else if (sum >= 22) 
   {
     message = "You're out of the game!";
@@ -85,6 +92,15 @@ function newCard() {
   cardEl.textContent = "NewCard: |" + nextCard + "| ";
   console.log("The next card is generated with value : "+ nextCard);
   sum = sum + nextCard;
+
+
+  // 1. Create a card variable for nextCard for Computer
+  let nextCardC = randomIntFromInterval(2, 11);
+  // 2. Adding the new card to the sum variable
+  cardElc.textContent = "NewCard: |" + nextCard + "| ";
+  console.log("The next card is generated with value : "+ nextCard);
+  sumC = sumC + nextCard;
+
   // 3. Calling startGame() function so that the games countinues
   startGame();
 }
