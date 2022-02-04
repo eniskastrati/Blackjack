@@ -15,16 +15,24 @@
     <div id="main-div">
       <h1 id="Blackjack">Blackjack</h1>
       <p id="message-el">Want to play a round?</p>
-      <p id="cards-el">Cards:</p>
-      <p id="card-el"></p>
-      <p id="sum-el">Sum:</p>
+      <div>
+        <p id="cards-el">Youre Cards:</p>
+        <p id="card-el"></p>
+        <p id="sum-el">Youre Sum:</p>
+      </div>
+      <div>
+        <p id="cards-elc">Computer Cards:</p>
+        <p id="card-elc"></p>
+        <p id="sum-elc">Computer's Sum:</p>
+      </div>
       <div id="buttons">
         <button id="startBtn" onclick="startGame()">START GAME</button>
         <button id="newCardBtn" onclick="newCard()">NEW CARD</button>
+        <button id="newCardBtn" onclick="newCard()">WAIT</button>
         <button id="res-button" onclick="restart()">RESTART THE GAME</button>
       </div>
       <p id="author">@github.com/eniskastrati</p>
     </div>
-    <script src="app.js"></script>
+    <script src="appC.js"></script>
   </body>
 </html>

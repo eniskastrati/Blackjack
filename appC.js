@@ -2,18 +2,25 @@
 //declearing variables (game elements)
 let firstCard = randomIntFromInterval(2, 11);//first random card
 let secondCard = randomIntFromInterval(2, 9);//second randomo card
+let firstCardC = randomIntFromInterval(2, 11);//first random card for Computer
+let secondCardC = randomIntFromInterval(2, 9);//second randomo card for Computer
 let sum = firstCard + secondCard;
 let hasBlackJack = false;
 let isAlive = true;
 let message = "";
 
 //getting elements from index.html and declearing them
+//User
 let messageEl = document.getElementById("message-el");
 let sumEl = document.getElementById("sum-el");
 let cardsEl = document.getElementById("cards-el");
 let cardEl = document.getElementById("card-el");
 let startBtn = document.getElementById("startBtn");
 let newCardBtn = document.getElementById("newCardBtn");
+//Computer
+let sumElc = document.getElementById("sum-elc");
+let cardsElc = document.getElementById("cards-elc");
+let cardElc = document.getElementById("card-elc");
 
 //an arrow function which adds animation after we win the blackjack
 const animation = () => {
@@ -35,14 +42,19 @@ function randomIntFromInterval(min, max) {
 }
 
 function startGame() {
-  //displaying the cards on the screen
+  //displaying the cards on the screen for user
   cardsEl.textContent = "Cards: |" + firstCard + "| |" + secondCard + "|";
-  //displaying the sum of two card on the screen
+  //displaying the sum of two card on the screen for user
   sumEl.textContent = "Sum: " + sum;
 
+  //displaying the cards on the screen for the Computer
+  cardsElc.textContent = "Cards: |" + firstCardC + "| |" + secondCardC + "|";
+  //displaying the sum of two card on the screen for the Computer
+  sumElc.textContent = "Sum: " + (firstCardC + secondCardC);
+  
   if (sum <= 20) 
   {
-    message = "Do you want to draw a new card?";
+    message = "Want to draw a new card?";
     isAlive = true;
   } 
   else if (sum === 21) 
