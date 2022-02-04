@@ -2,28 +2,30 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="description" content="Basic Web Game">
-    <meta name="keywords" content="HTML,CSS,JavaScript,Blackjack">
-    <meta name="author" content="Enis Kastrati">
+    <meta name="description" content="Basic Web Game" />
+    <meta name="keywords" content="HTML,CSS,JavaScript,Blackjack" />
+    <meta name="author" content="Enis Kastrati" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>--  Blackjack --</title>
+    <title>-- Blackjack --</title>
   </head>
   <!-- Background image is in index.html for a fasster loading as web call first of all HTML file and then styelsheet-->
-  <body style="background-image: url(./images/pexels-javon-swaby-3279691.jpg );">
+  <body style="background-image: url(./images/pexels-javon-swaby-3279691.jpg)">
     <div id="main-div">
       <h1 id="Blackjack">Blackjack</h1>
       <p id="message-el">Want to play a round?</p>
-      <div>
-        <p id="cards-el">Youre Cards:</p>
-        <p id="card-el"></p>
-        <p id="sum-el">Youre Sum:</p>
-      </div>
-      <div>
-        <p id="cards-elc">Computer Cards:</p>
-        <p id="card-elc"></p>
-        <p id="sum-elc">Computer's Sum:</p>
+      <div class="div-flex">
+        <div>
+          <p id="cards-el"></p>
+          <p id="card-el"></p>
+          <p id="sum-el"></p>
+        </div>
+        <div>
+          <p id="cards-elc"></p>
+          <p id="card-elc"></p>
+          <p id="sum-elc"></p>
+        </div>
       </div>
       <div id="buttons">
         <button id="startBtn" onclick="startGame()">START GAME</button>
