@@ -4,7 +4,6 @@ body {
   background-size: 150%;
   background-repeat: no-repeat;
   font-weight: bolder;
-  text-decoration: black 100px;
   color: white;
   position: absolute;
   left: 50%;
@@ -14,12 +13,12 @@ body {
   max-height: 100vh;
   margin: 0;
 }
-#SVG{
+#SVG {
   margin-left: 30px;
   margin-top: 60px;
   width: 50%;
 }
-#SVG:hover{
+#SVG:hover {
   width: 55%;
 }
 a {
@@ -29,17 +28,18 @@ a {
 a:hover {
   color: red;
 }
-.div-flex{
+.div-flex {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  align-content: center;
 }
-.div-flex div{
+.div-flex div {
+  margin-left: 30px;
   font-size: 20px;
   width: 100%;
+  border: 0.5px solid goldenrod;
   border-radius: 20px;
-  padding: 3px;
+  padding: 10px;
 }
 #main-div h1 {
   margin-top: 10%;
@@ -70,13 +70,12 @@ p {
 #message-el.horizTranslate {
   -webkit-text-stroke: 1px red;
 }
-#cards-el{
+#cards-el {
   white-space: nowrap;
 }
-#cards-elc{
+#cards-elc {
   white-space: nowrap;
 }
-
 #buttons {
   display: flex;
   flex-direction: row;
@@ -84,17 +83,14 @@ p {
   align-items: center;
   align-content: center;
   margin: auto;
-
 }
-
 button {
   font-size: 15px;
   color: #016f32;
   width: 200px;
   height: 45px;
   background: goldenrod;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding: 0 5px;
   font-weight: bold;
   border: none;
   border-radius: 3px;
@@ -119,7 +115,7 @@ button:hover {
     max-height: 100vh;
   }
   .div-flex {
-    margin:0px;
+    margin: 0px;
   }
   #main-div h1 {
     font-size: 80px;
@@ -127,7 +123,7 @@ button:hover {
   #message-el {
     font-size: 30px;
   }
-  #buttons{
+  #buttons {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -149,7 +145,7 @@ button:hover {
   #message-el {
     font-size: 45px;
   }
-  #buttons{
+  #buttons {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
