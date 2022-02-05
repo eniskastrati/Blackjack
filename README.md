@@ -2,9 +2,9 @@
 
 A simple Blackjack game using HTML, CSS and JavaScript
 
-Give it a try online --> <a href="https://eniskastrati.github.io/blackjack/">BlackJack</a>
+This is the Second version of the game and is going to be a bit better
+-it is beeing developed on branch v.2 in this repo
 
-![alt text](https://github.com/eniskastrati/blackjack/blob/AppDevelopment/images/blackjack-first.png?raw=true)
-
-
-![alt text](https://github.com/eniskastrati/blackjack/blob/AppDevelopment/images/Blackjack.png?raw=true)
+Player are going to be able to play alone and also against the Computer
+-Alone by just trying to get BLACKJACK
+-With Computer trying to win against Computer
