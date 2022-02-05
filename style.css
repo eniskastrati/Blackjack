@@ -28,7 +28,8 @@ a:hover {
   align-content: center;
 }
 .div-flex div{
-  margin: 30px;
+  font-size: 20px;
+  width: 100%;
   border-radius: 20px;
   padding: 3px;
 }
@@ -59,7 +60,7 @@ p {
   white-space: nowrap;
 }
 #message-el.horizTranslate {
-  -webkit-text-stroke: 2px red;
+  -webkit-text-stroke: 1px red;
 }
 
 #buttons {
@@ -103,13 +104,14 @@ button:hover {
     max-width: 50%;
     max-height: 100vh;
   }
-  #cards-el{font-size: 4px;}
-  #card-el{font-size: 4px;}
+  .div-flex {
+    margin:0px;
+  }
   #main-div h1 {
     font-size: 80px;
   }
   #message-el {
-    font-size: 22px;
+    font-size: 30px;
   }
   #buttons{
     display: flex;
@@ -118,6 +120,12 @@ button:hover {
     align-items: center;
     align-content: center;
     margin: auto;
+  }
+  #cards-el{
+    white-space: nowrap;
+  }
+  #cards-elc{
+    white-space: nowrap;
   }
 }
 /*-----Responsive for Tablet----------*/

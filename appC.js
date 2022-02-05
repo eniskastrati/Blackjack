@@ -95,6 +95,7 @@ function newCard() {
     cardEl.textContent = "NewCard: |" + nextCard + "| ";
     console.log("The next card is generated with value : " + nextCard);
     sum = sum + nextCard;
+    
     // 3. Calling startGame() function so that the games countinues
     startGame();
 }
