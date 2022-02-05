@@ -14,15 +14,18 @@
   <body style="background-image: url(./images/pexels-javon-swaby-3279691.jpg );">
     <div id="main-div">
       <h1 id="Blackjack">Blackjack</h1>
-      <p id="message-el">Hi there, </p>
-      <p id="message-el">how do you want to play?</p>
+      <p id="message-el">Want to play a round?</p>
+      <p id="cards-el">Cards:</p>
+      <p id="card-el"></p>
+      <p id="sum-el">Sum:</p>
       <div id="buttons">
-        <button id="startBtn"><a href="./Game.html">Alone</a></button>
-        <button id="res-button"><a href="./GameC.html">With Computer</a></button>
+        <button id="startBtn" onclick="startGame()">START GAME</button>
+        <button id="newCardBtn" onclick="newCard()">NEW CARD</button>
+        <button id="res-button" onclick="restart()">RESTART THE GAME</button>
       </div>
-        <div>
+      <div>
         <a href="./index.html" id="SVGA"><img id="SVG" src="./images/1588978741582004484.svg" alt="Back Arrow SVG"></a>
-        </div>
+      </div>
       <p id="author">@github.com/eniskastrati</p>
     </div>
     <script src="app.js"></script>
